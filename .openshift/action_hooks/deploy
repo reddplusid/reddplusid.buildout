@@ -30,6 +30,12 @@ then
         mkdir ${OPENSHIFT_DATA_DIR}/egg-cache/
     fi
 
+    if [ "x${OPENSHIFT_LOG_DIR}" == "x" ]
+    then
+        export OPENSHIFT_LOG_DIR=${OPENSHIFT_DIY_LOG_DIR}
+    fi
+
+
     # initialize a buildout.cfg using the environment
     cat >> openshift-buildout.cfg << EOF
 [buildout]
