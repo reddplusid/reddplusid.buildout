@@ -14,7 +14,8 @@ Ubuntu/Debian Dependencies
  * ruby
  * rubygems
  * poppler-utils
+ * graphicsmagick
 
 Install docsplit with rubygems:
 
-gem install docsplit
+gem install --version '0.6.4' docsplit 
